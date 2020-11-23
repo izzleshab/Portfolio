@@ -5,19 +5,19 @@
 }
 /* Custom Properties, update these for your own design */
 :root {
-    --ff-primary: 'Lato', sans-serif;
-    --ff-secondary: 'Lato', sans-serif;
+    --ff-primary: 'Rubik', sans-serif;
+    --ff-secondary: 'Rubik', sans-serif;
     --fw-reg: 300;
     --fw-bold: 900;
     --clr-light: #fff;
-    --clr-dark: #151414;
-    --clr-accent: #8ce328;
+    --clr-dark: #000000;
+    --clr-accent: #d20000;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 0.125em 0.125em 0.25em rgba(0,0,0.15);
+    --bs: 0.25em 0.25em 0.75em rgba(128, 126, 126, 0.331), 0.125em 0.125em 0.25em rgba(0,0,0.15);
 }
 @media (min-width: 800px) {
     :root {
@@ -29,8 +29,8 @@
 }
 /* General styles */
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -63,6 +63,7 @@ strong { font-weight: var(--fw-bold) }
 
 .btn {
   display: inline-block;
+  color: var(--clr-light);
   padding: .5em 2.5em;
   background: var(--clr-accent);
   text-decoration: none;
@@ -300,6 +301,59 @@ header {
   }
 }
 
+/* Skills */
+
+@media (min-width: 800px) {
+  .skills-wrapper {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.software-icons-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.software-icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.software-icons li {
+  justify-content: center;
+  border: 1px solid rgba(238, 238, 238, 0.678);
+  border-radius: 5%;
+  margin: 20px 5px 5px 5px;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  font-size: 18px;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.bulma {
+  background-image: url(../images/bulma-1.png);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.skill-paragraph {
+  word-wrap: break-word;
+}
+
 /* About */
 
 .about-me {
@@ -324,6 +378,7 @@ header {
 
   .section__title--about {
     grid-area: title;
+    
   }
 
   .section__subtitle--about {
@@ -340,6 +395,7 @@ header {
   }
   .about-me__img{
     grid-area: img;
+    margin-top: 40px;
     position: relative;
     z-index: 2;
   }
@@ -390,7 +446,7 @@ header {
 /* Footer */
 
 .footer {
-  background: #111;
+  background: rgb(0, 0, 0);
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
