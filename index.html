@@ -23,13 +23,11 @@
       </button>
       <nav class="nav">
         <ul class="nav__list"> 
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
           <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
           <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#interests" class="nav__link">My Interests</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -45,25 +43,6 @@
     <!--Skills-->
   <section class="my-skills" id="skills">
     <h2 class="section__title section__title--skills">Skills</h2>
-      <div class="skills-wrapper">
-        <div class="skill">
-            <h3>Front-End:</h3>
-          <p class="skill-paragraph">
-            HTML5, CSS3, SCSS/SASS, Flexbox, Bulma, Bootstrap, JavaScript, React, JSON
-          </p>
-          <h3>Back-End:</h3>
-        <p class="skill-paragraph">
-          Express, Node.js, Mongoose, MongoDB, PostgreSQL, Django, Django-REST-framework, Python, 
-        </p>
-          <h3>Package Managers:</h3>
-        <p class="skill-paragraph">
-          Yarn, npm, Pip, Pipenv
-        </p>
-        <h3>Storage & Version Control:</h3>
-        <p class="skill-paragraph">
-          Git, GitHub, Heroku
-        </p>
-      </div>
       <div class=software-icons-wrapper>
         <ul class="software-icons">
           <li class="cell">
@@ -122,7 +101,6 @@
       </div>
     </div><!--/Skills-->
     </section>
-
     <!--About-->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">About Me</h2>
@@ -150,26 +128,57 @@
     <section class="my-projects" id="projects">
       <h2 class="section__title section__title--work">My Projects</h2>
         <p class="section__subtitle section__subtitle--work">Completed at General Assembly</p>
-          <p class="snake-description">
-            Project 1: Snake Game - Solo front-end project built in 7 days using HTML, CSS and JavaScript</br></br>
-            Project 2: Guess That Pokemon - Two person full-stack project built in 2 days. Built using React and a public API.</br></br>
-            Project 3: The Beans - Three person full-stack MERN project build in 9 days. Features CRUD functionality utilising an Express API of our own creation.</br></br>
-            Project 4: Shellbook - Solo full-stack project built in 8 days. Built using a Python, Django and Django-REST-framework back-end and React front-end. 
-          </p>
-            <div class="portfolio">
-              <a href="https://github.com/izzleshab/SEI-Project-1" class="portfolio__item">
-              <img src="images/snake.png" alt="snake" class="portfolio__img">
-              </a>
-              <a href="https://github.com/izzleshab/SEI-Project-2" class="portfolio__item">
-              <img src="images/gtp.png" alt="guess-that-pokemon" class="portfolio__img">
-              </a>
-              <a href="https://github.com/izzleshab/SEI-Project-3" class="portfolio__item">
-              <img src="images/thebeans.png" alt="the-beans" class="portfolio__img">
-              </a>
-            <a href="https://github.com/izzleshab/SEI-Project-4" class="portfolio__item">
-          <img src="images/shellbook.png" alt="shellbook" class="portfolio__img">
-        </a>
-      </div>
+        <div class="portfolio-wrapper">
+          <div class="portfolio-item">
+            <h3>Snake Game</h3>
+            <h5>HTML | CSS | JavaScript</h5>
+            <p>My first project as part of General Assembly, a recreation of the classic mobile game Snake. Built in 7 days.</p>
+            <a href="https://izzleshab.github.io/SEI-Project-1/" target="_blank">
+              <i class="fas fa-link fa-3x">
+              </i>
+            </a>
+            <a href="https://github.com/izzleshab/SEI-Project-1/" target="_blank">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+          </div>
+          <div class="portfolio-item">
+            <h3>Guess That Pokemon</h3>
+            <h5>HTML | SCSS | JavaScript | React.js | PokeAPI | Axios | Insomnia | Bulma </h5>
+            <p>Project 2 was part of the General Assembly hackathon. A pair-coded Pokemon guessing game featuring easy, medium and hard difficulties. Built in 2 days.</p>
+            <a href="https://izzleshab-project-2.netlify.app/" target="_blank">
+              <i class="fas fa-link fa-3x">
+              </i>
+            </a>
+            <a href="https://github.com/izzleshab/SEI-Project-2/" target="_blank">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+          </div>
+          <div class="portfolio-item">
+            <h3>The Beans</h3>
+            <h5>React.js | MongoDB | Express.js | Node.js | JavaScript | JWT | Axios | Mongoose | Nodemon | Bcrypt | Faker</h5>
+            <p>The Beans is an e-commerce style application that connects coffee bean roasters with users. 3 person group project built in 9 days.</p>
+            <a href="https://thebeans.herokuapp.com/" target="_blank">
+              <i class="fas fa-link fa-3x">
+              </i>
+            </a>
+            <a href="https://github.com/izzleshab/SEI-Project-3/" target="_blank">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+          </div>
+          <div class="portfolio-item">
+            <h3>Shellbook</h3>
+            <h5>Django | Django-REST-framework| PostgreSQL | PyJWT | JavaScript | React.js | HTML | CSS | Axios | Bulma | Insomnia | Tableplus </h5>
+            <p>Shellbook is a community page for turtle lovers. Users may browse various turtle species as well as upload their own. Solo project built in 9 days. </p>
+            <a href="http://shellbook.herokuapp.com/" target="_blank">
+              <i class="fas fa-link fa-3x">
+              </i>
+            </a>
+            <a href="https://github.com/izzleshab/SEI-Project-4/" target="_blank">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+          </div>
+        
+        </div>
     </section>
 
         <!--Experience-->
